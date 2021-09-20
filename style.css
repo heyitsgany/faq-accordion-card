@@ -24,13 +24,12 @@
 
 body {
   display: grid;
-  height: 100vh;
-  margin-top: 3rem;
+  min-height: 100vh;
+  margin-top: 6rem;
   background: no-repeat fixed var(--background-gradient);
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
-  overflow: hidden;
   place-items: center;
 }
 
@@ -95,7 +94,7 @@ body {
 
 .faq__question::after {
   float: right;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   content: url(images/icon-arrow-down.svg);
 }
 
@@ -143,8 +142,8 @@ body {
 
   .hero {
     display: grid;
-    width: 26rem;
-    height: 31.8rem;
+    max-width: 26rem;
+    min-height: 31.8rem;
     background: no-repeat url(images/bg-pattern-desktop.svg);
     background-position: 104% 67%;
     overflow: hidden;
@@ -165,8 +164,8 @@ body {
   }
 
   .faq {
-    height: 31.8rem;
-    width: 26rem;
+    min-height: 31.8rem;
+    max-width: 26rem;
     padding: 3.6rem 3rem 5rem 1rem;
     top: 0;
   }
